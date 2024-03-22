@@ -8,7 +8,7 @@
     height: 200px; /* Fixed height */
     display: inline-block; /* To make them appear side by side */
     vertical-align: top; /* Align boxes from the top */
-    margin-top: 10px; /* Add some space between boxes */
+    margin-top: 50px; /* Add some space between boxes */
     margin-right: 20px; /* Add space between boxes */
     margin-bottom: 20px; /* Add space between rows */
     background-color: #8C6A5D;
@@ -22,7 +22,7 @@
   }
   h1,h2{
     color: antiquewhite;
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   p{
     color: antiquewhite;
