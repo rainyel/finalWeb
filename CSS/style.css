@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,13 +7,13 @@
 nav {
     display: flex;
     justify-content: left;
-    background:linear-gradient(to right,rgb(213, 77, 213),rgb(109, 192, 224))
-    
-    
+    background: linear-gradient(to right, rgb(213, 77, 213), rgb(109, 192, 224));
 }
-nav a:hover{
+
+nav a:hover {
     color: aqua;
 }
+
 nav a {
     color: white;
     text-decoration: none;
@@ -23,35 +23,43 @@ nav a {
     font-size: 1.2rem;
     font-family: sans-serif;
 }
+
 body {
-    background-image: url('/img/poto.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100vh 100vh;
-    background-size: cover;
-  }
-.wan{
+    background: linear-gradient(to bottom, rgb(79, 215, 79), rgb(216, 74, 74));
+    height: 100vh; /* Set height to cover full viewport height */
+    margin: 0; /* Remove default body margin */
+}
+
+.container {
+    height: 100%; /* Set container height to fill the body */
+}
+
+.wan {
     margin-top: 10%;
 }
-h1{
+
+h1 {
     font-size: 3rem;
     color: beige;
     font-family: sans-serif;
 }
 
-h4{
+h4 {
     font-size: 1.5rem;
     gap: 80%;
     color: beige;
     font-family: sans-serif;
 }
-p{
+
+p {
     color: rgb(255, 255, 255);
     font-family: sans-serif;
 }
-.tre{
+
+.tre {
     color: aqua;
 }
-.tre:hover{
+
+.tre:hover {
     color: rgb(234, 57, 104);
 }
