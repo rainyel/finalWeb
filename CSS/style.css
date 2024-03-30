@@ -25,7 +25,8 @@ nav a {
 }
 
 body {
-    background: linear-gradient(to bottom, rgb(79, 215, 79), rgb(216, 74, 74));
+    
+    background: linear-gradient(to bottom, skyblue,rgb(224, 224, 108));
     height: 100vh; /* Set height to cover full viewport height */
     margin: 0; /* Remove default body margin */
 }
@@ -40,26 +41,106 @@ body {
 
 h1 {
     font-size: 3rem;
-    color: beige;
+    color: rgb(92, 92, 92);
     font-family: sans-serif;
 }
 
 h4 {
     font-size: 1.5rem;
     gap: 80%;
-    color: beige;
+    color: rgb(92, 92, 92);
     font-family: sans-serif;
+}
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid #fff; /* White border around the profile picture */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+    transition: transform 0.3s ease;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+    margin-top: -5%;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1); /* Scale up the profile picture on hover */
+}
+
+.profile-pic::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Gradient overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.profile-pic:hover::before {
+    opacity: 0.5; /* Show gradient overlay on hover */
+}
+
+.profile-pic::after {
+    content: "\f406"; /* Unicode for user-circle icon */
+    font-family: FontAwesome;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.8); /* Icon color with transparency */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.profile-pic:hover::after {
+    opacity: 1; /* Show user-circle icon on hover */
+}
+
+.content {
+    overflow: hidden; /* Clear floats */
+    margin-top: 4%;
+
 }
 
 p {
-    color: rgb(255, 255, 255);
+    color: rgb(92, 92, 92);
     font-family: sans-serif;
 }
 
 .tre {
-    color: aqua;
+    color: rgb(175, 50, 121);
 }
 
 .tre:hover {
     color: rgb(234, 57, 104);
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    h4 {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
 }
